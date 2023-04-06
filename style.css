@@ -1,0 +1,27 @@
+body {
+    /*font-family: 'Outfit', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --colorPurp: #5D5DFF;
+    --colorDark: #33363A;
+    --colrLightGray: #C5D2DC;
+}
+
+.header {
+    margin-top: 24px;
+}
+
+.btn_header {
+    color: #fff !important;
+    background-color: var(--colorPurp)!important;
+}
