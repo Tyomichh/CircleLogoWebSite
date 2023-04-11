@@ -1,14 +1,19 @@
 body {
+    box-sizing: border-box;
+    font-size: 20px;
     /*font-family: 'Outfit', sans-serif;*/
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
     color: #fff;
     line-height: 1;
     background: #151719;
 }
 
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+    padding: 0;
+}
+
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -17,11 +22,14 @@ body {
     --colorPurp: #5D5DFF;
     --colorDark: #33363A;
     --colrLightGray: #C5D2DC;
+    --colorTitleWhite: #D9E3EA;
+    --colorParagraphGray: #9BA9B4;
 }
 
 
 /* BUTTONS */
 .btn-standart-slyle {
+    font-size: 16px;
     --bs-btn-color: var(--bs-white);
     --bs-btn-bg: var(--colorPurp);
     --bs-btn-hover-color: var(--colorPurp);
@@ -33,6 +41,7 @@ body {
 }
 
 .btn-learn-slyle {
+    font-size: 16px;
     --bs-btn-color: var(--colrLightGray);
     --bs-btn-bg: var(--colorDark);
     --bs-btn-hover-color: var(--colrLightGray);
@@ -63,4 +72,19 @@ body {
 /* HEADER */
 .header {
     margin-top: 24px;
+}
+
+/* TEXT */
+.main_title_text {
+    font-size: 52px;
+    font-weight: 800;
+    color: var(--colorTitleWhite);
+    padding-bottom: 16px;
+}
+
+.main_paragraph_text {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--colorParagraphGray);
+    padding-bottom: 32px;
 }
