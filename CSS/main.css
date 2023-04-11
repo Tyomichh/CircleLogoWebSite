@@ -1,0 +1,66 @@
+body {
+    /*font-family: 'Outfit', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    line-height: 1;
+    background: #151719;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --colorPurp: #5D5DFF;
+    --colorDark: #33363A;
+    --colrLightGray: #C5D2DC;
+}
+
+
+/* BUTTONS */
+.btn-standart-slyle {
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--colorPurp);
+    --bs-btn-hover-color: var(--colorPurp);
+    --bs-btn-hover-bg: none;
+    --bs-btn-box-shadow: 0px 1px 3px #19202C;
+    --bs-btn-hover-box-shadow: none;
+    border-radius: 2px;
+    transition: all .2s linear;
+}
+
+.btn-learn-slyle {
+    --bs-btn-color: var(--colrLightGray);
+    --bs-btn-bg: var(--colorDark);
+    --bs-btn-hover-color: var(--colrLightGray);
+    --bs-btn-hover-bg: none;
+    --bs-btn-box-shadow: 0px 1px 3px #19202C;
+    --bs-btn-hover-box-shadow: none;
+    border-radius: 2px;
+    transition: all .2s linear;
+}
+
+.btn-learn-slyle:hover {
+    border: 1px solid var(--colrLightGray);
+}
+
+.about_btns {
+    width: 164px;
+    height: 48px;
+    margin: 0 0.6%;
+}
+
+
+/* SECTIONS */
+.section_indent {
+    margin-top: 80px;
+}
+
+
+/* HEADER */
+.header {
+    margin-top: 24px;
+}
