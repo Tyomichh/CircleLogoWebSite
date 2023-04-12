@@ -59,6 +59,9 @@ h1,h2,h3,h4,h5,h6,p {
     width: 164px;
     height: 48px;
     margin: 0 0.6%;
+}
+
+.btn_margin {
     margin-bottom: 4.5%;
 }
 
@@ -87,13 +90,17 @@ h1,h2,h3,h4,h5,h6,p {
 
 /* SECTIONS */
 .section_indent {
-    margin-top: 80px;
+    margin-top: 128px;
 }
 
 
 /* HEADER */
 .header {
     margin-top: 24px;
+}
+
+.header_indent {
+    margin-top: 80px;
 }
 
 
@@ -116,7 +123,6 @@ h1,h2,h3,h4,h5,h6,p {
 /* Landing template for startups */
 .main_video_block {
     position: relative;
-    z-index: 0;
     max-width: 1024px;
     width: 100%;
     padding-top: 53.3%;
