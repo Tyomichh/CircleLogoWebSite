@@ -26,7 +26,6 @@ h1,h2,h3,h4,h5,h6,p {
     --colorParagraphGray: #9BA9B4;
 }
 
-
 /* BUTTONS */
 .btn-standart-slyle {
     font-size: 16px;
@@ -60,8 +59,31 @@ h1,h2,h3,h4,h5,h6,p {
     width: 164px;
     height: 48px;
     margin: 0 0.6%;
+    margin-bottom: 4.5%;
 }
 
+.play_btn {
+    position: absolute;
+    z-index: 1000;
+    top: 42%;
+    left: 45%;
+    max-width: 130px;
+    max-height: 130px;
+    height: 100%;
+    width: 100%;
+    background: url(../image/Play.svg) no-repeat center;
+    background-size: 130px;
+    transition: background-size .2s linear;
+}
+
+.play_btn:hover {
+    cursor: pointer;
+    background-size: 120%;
+}
+
+.hiden_btn {
+    display: none;
+}
 
 /* SECTIONS */
 .section_indent {
@@ -73,6 +95,7 @@ h1,h2,h3,h4,h5,h6,p {
 .header {
     margin-top: 24px;
 }
+
 
 /* TEXT */
 .main_title_text {
@@ -87,4 +110,23 @@ h1,h2,h3,h4,h5,h6,p {
     font-weight: 400;
     color: var(--colorParagraphGray);
     padding-bottom: 32px;
+}
+
+
+/* Landing template for startups */
+.main_video_block {
+    position: relative;
+    z-index: 0;
+    max-width: 1024px;
+    width: 100%;
+    padding-top: 53.3%;
+    background: url(../image/annie-spratt@2x.jpg) no-repeat center;
+}
+
+.main_video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
