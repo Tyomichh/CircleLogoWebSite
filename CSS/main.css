@@ -109,9 +109,21 @@ hr {
 
 
 /* TEXT */
-.main_title_text {
+.first_title_text {
     font-size: 52px;
     font-weight: 800;
+    color: var(--colorTitleWhite);
+}
+
+.main_title_text {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--colorTitleWhite);
+}
+
+.second_title_text {
+    font-size: 32px;
+    font-weight: 700;
     color: var(--colorTitleWhite);
 }
 
@@ -138,6 +150,13 @@ hr {
     font-size: 14px;
     font-weight: 600;
     color: var(--colorGreen);
+}
+
+.art_text {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--colorPurp);
+    font-family: 'Architects Daughter', cursive;
 }
 
 
