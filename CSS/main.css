@@ -1,8 +1,8 @@
 body {
     box-sizing: border-box;
     font-size: 20px;
-    /*font-family: 'Outfit', sans-serif;*/
-    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Architects Daughter', cursive;*/
+    font-family: 'Inter', sans-serif;
     color: #fff;
     line-height: 1;
     background: #151719;
@@ -11,6 +11,11 @@ body {
 h1,h2,h3,h4,h5,h6,p {
     margin: 0;
     padding: 0;
+}
+
+hr {
+    margin: 80px 0;
+    background: var(--colorDark);
 }
 
 * {
@@ -53,7 +58,7 @@ h1,h2,h3,h4,h5,h6,p {
 
 .btn-learn-slyle:hover {
     border: 1px solid var(--colrLightGray);
-}
+} 
 
 .about_btns {
     width: 164px;
@@ -61,21 +66,18 @@ h1,h2,h3,h4,h5,h6,p {
     margin: 0 0.6%;
 }
 
-.btn_margin {
-    margin-bottom: 4.5%;
-}
-
 .play_btn {
-    position: absolute;
-    z-index: 1000;
-    top: 42%;
-    left: 45%;
     max-width: 130px;
     max-height: 130px;
     height: 100%;
     width: 100%;
-    background: url(../image/Play.svg) no-repeat center;
+    background: url(../image/Video/Play.svg) no-repeat center;
     background-size: 130px;
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     transition: background-size .2s linear;
 }
 
@@ -109,14 +111,25 @@ h1,h2,h3,h4,h5,h6,p {
     font-size: 52px;
     font-weight: 800;
     color: var(--colorTitleWhite);
-    padding-bottom: 16px;
+}
+
+.subtitle_text {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--colorTitleWhite);
+    padding-bottom: 8px;
 }
 
 .main_paragraph_text {
     font-size: 20px;
     font-weight: 400;
     color: var(--colorParagraphGray);
-    padding-bottom: 32px;
+}
+
+.second_paragraph_text {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--colorParagraphGray);
 }
 
 
@@ -126,7 +139,7 @@ h1,h2,h3,h4,h5,h6,p {
     max-width: 1024px;
     width: 100%;
     padding-top: 53.3%;
-    background: url(../image/annie-spratt@2x.jpg) no-repeat center;
+    background: url(../image/Video/VideoBG.jpg) no-repeat center;
 }
 
 .main_video {
@@ -135,4 +148,33 @@ h1,h2,h3,h4,h5,h6,p {
     right: 0;
     bottom: 0;
     left: 0;
+}
+
+
+/* The majority our customers */
+.colmn_size {
+    max-width: 335px;
+    width: 100%;
+}
+
+.purp_circle {
+    max-width: 64px;
+    max-height: 64px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--colorPurp);
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.objekt_circle {
+    /* padding: 21px 21px; */
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.margin_circle {
+    margin-top: 80px;
 }
