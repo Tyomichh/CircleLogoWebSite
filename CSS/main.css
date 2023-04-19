@@ -215,3 +215,16 @@ hr {
     border-radius: 15px;
     padding-top: 7px;
 }
+
+.onePr_colmn {
+    margin-top: 8%;
+}
+
+.list_style {
+    margin: 15px 0 0;
+    list-style-image: url(../image/TheMajorityBlock/TickMark.svg);
+}
+
+.list_style li {
+    padding: 5px 0;
+}
