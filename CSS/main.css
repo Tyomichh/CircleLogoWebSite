@@ -1,5 +1,4 @@
 body {
-    box-sizing: border-box;
     font-size: 20px;
     /*font-family: 'Architects Daughter', cursive;*/
     font-family: 'Inter', sans-serif;
@@ -23,6 +22,7 @@ hr {
 }
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -96,6 +96,19 @@ hr {
 .hiden_btn {
     display: none;
 }
+
+.btn-footer-slyle {
+    height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--colorPurp);
+    background-color: var(--bs-white);
+    --bs-btn-hover-color: var(--bs-white);
+    --bs-btn-hover-bg: none;
+    border-radius: 2px;
+    transition: all .2s linear;
+}
+
 
 /* SECTIONS */
 .section_indent {
@@ -175,6 +188,14 @@ hr {
     margin-top: 8%;
 }
 
+.margin_circle {
+    margin-top: 80px;
+}
+
+.footer_margin {
+    margin: 80px 0 68px;
+}
+
 
 /* Landing template for startups */
 .main_video_block {
@@ -217,10 +238,6 @@ hr {
     transform: translate(-50%, -50%);
 }
 
-.margin_circle {
-    margin-top: 80px;
-}
-
 
 /* One product, unlimited solutions */
 .motivating_rectangle {
@@ -258,4 +275,26 @@ hr {
 .quotes_object {
     top: 0;
     left: 12%;
+}
+
+
+/* Footer */
+.form_block {
+    max-height: 206px;
+    height: 206px;
+}
+
+.input_style {
+    padding: 12px 148px 12px 16px;
+    border-radius: 2px;
+    margin-right: 8px;
+    background: #4B4ACF;
+    border: 1px solid #8D8DFF;
+    outline: none;
+    color: white;
+}
+.input_style::placeholder {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ABABFF;
 }
