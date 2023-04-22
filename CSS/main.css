@@ -340,8 +340,9 @@ hr {
     max-height: 32px;
     width: 100%;
     height: 100%;
-    background-color: var(--colorVeryDark);
+    background: var(--colorVeryDark);
     border-radius: 50%;
+    transition: background .3s linear;
 }
 
 .objekt_dark_circle {
@@ -349,6 +350,16 @@ hr {
     left: 50%;
     color: var(--colorPurp);
     transform: translate(-50%, -50%);
+    font-size: 15px;
+}
+
+.objekt_dark_circle {
+
+}
+
+.dark_footer_circle:hover {
+    background: none;
+    border: 1px solid var(--colorPurp); 
 }
 
 .gridM {
