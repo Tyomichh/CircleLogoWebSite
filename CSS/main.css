@@ -353,13 +353,8 @@ hr {
     font-size: 15px;
 }
 
-.objekt_dark_circle {
-
-}
-
 .dark_footer_circle:hover {
     background: none;
-    border: 1px solid var(--colorPurp); 
 }
 
 .gridM {
