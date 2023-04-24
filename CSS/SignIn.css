@@ -42,18 +42,26 @@ hr {
 
 /* BUTTONS */
 .btn-danger-slyle {
-    grid-column: 2;
+    height: 48px;
     --bs-btn-color: var(--bs-white);
     --bs-btn-bg: var(--colorRed);
     --bs-btn-hover-color: var(--colorRed);
     --bs-btn-hover-bg: none;
     border-radius: 2px;
     transition: all .2s linear;
+    grid-row: 1;
 }
 
-.button_block {
-    grid-template-columns: 1.1fr 1fr 1.1fr;
+.btn-standart-slyle {
+    height: 48px;
+    --bs-btn-color: var(--bs-white);
+    --bs-btn-bg: var(--colorPurp);
+    --bs-btn-hover-color: var(--colorPurp);
+    --bs-btn-hover-bg: none;
+    border-radius: 2px;
+    transition: all .2s linear;
 }
+
 
 /* HEADER */
 .header {
@@ -151,6 +159,15 @@ hr {
 
 
 /*  */
+.form_block {
+    grid-template-columns: 1.1fr 1fr 1.1fr;
+}
+
+.form_block_block{
+    grid-column-start:2;
+    grid-column-end: 3;
+}
+
 .sign_icon {
     transition: all .2s linear;
     outline: none;
@@ -167,4 +184,31 @@ hr {
     top: -3px;
     left: 23px;
     color: #F56565;
+}
+
+.p_line {
+    position: relative;
+    grid-row: 2;
+}
+
+.p_line::before {
+    content: "";
+    max-width: 90px;
+    width: 100%;
+    border: 1px dashed var(--colorDark);
+    position: absolute;
+    right: 77.56%;
+    top: 50%;
+    bottom: 45.83%;
+}
+
+.p_line::after {
+    content: "";
+    max-width: 90px;
+    width: 100%;
+    border: 1px dashed var(--colorDark);
+    position: absolute;
+    left: 77.56%;
+    top: 50%;
+    bottom: 45.83%;
 }
