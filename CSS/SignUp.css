@@ -93,21 +93,21 @@ hr {
     color: var(--colorTitleWhite);
 }
 
-.footer_text {
+.form_text {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     color: var(--colorInpuGray);
 }
 
-.small_footer_text {
+.privacy_policy_text {
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
     color: var(--colorParagraphGray);
 }
 
-.small_footer_title {
+.input_label_stl {
     font-size: 14px;
     font-weight: 500;
     line-height: 22px;
@@ -187,4 +187,15 @@ hr {
 
 .SignIn_url:hover {
     color: var(--colorTitleWhite);
+}
+
+.labelValid::after {
+    content: " *";
+    display: none;
+    color:var(--colorRed);
+    font-size: 14px;
+}
+
+.Inline {
+    display: inline;
 }

@@ -1,5 +1,11 @@
-window.addEventListener('DOMContentLoaded', function(){
+let form = document.querySelector('.form_block'),
+    formInputs = document.querySelectorAll('.labelValid'),
+    afterStyle = window.getComputedStyle(formInputs, '::after'),
+    inputEmail = document.querySelector('#email'),
+    inputPass = document.querySelector('#pass');
 
+
+window.addEventListener('DOMContentLoaded', function(){
     var videoPlay = this.document.querySelector('.play_btn');
     var videoBlock = this.document.querySelector('.main_video_block');
 
@@ -21,3 +27,23 @@ window.addEventListener('DOMContentLoaded', function(){
     })
 
 });
+
+
+
+form.onsubmit = function () {
+    elmailVal = inputEmail.value,
+    passVal = inputPass.value;
+
+    afterStyle.forEach(function(input) {
+        if (input.value === '') {
+            afterStyle.display = 'inline';
+            console.log('input huinya minyai')
+        } 
+
+        else {
+            afterStyle.display = 'none';
+        }
+    })
+
+    return false;
+};
