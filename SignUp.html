@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="CSS/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/SignIn.css">
+    <link rel="stylesheet" href="CSS/SignUp.css">
     <link rel="stylesheet" href="image/icomoon/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,26 +40,44 @@
                     <h1 class="col-10 first_title_text">Welcome. We exist to make entrepreneurism easier.</h1>
                 </div>
 
-                <form class="d-grid form_block justify-content-center"action="">
+                <form class="d-grid form_block justify-content-center w-100" action="">
 
                     <div class="form_block_block">
 
-                        <div class="mb-4">
+                        <div class="mb-3">
 
-                            <a class="d-flex btn btn-danger-slyle name_text align-items-center justify-content-center" type="submit" target="_blank" href="SignIn.html">
+                            <a class="d-flex btn btn-danger-slyle name_text align-items-center justify-content-center" type="submit" target="_blank" href="https://www.google.com/account/about/">
                                 <span class="icon-Path sign_icon">&nbsp</span>
                                 &nbsp Sign up width Google
                             </a>
 
                         </div>
 
-                        <p class="d-flex justify-content-center footer_text p_line mb-4">Or, register with your email</p>
+                        <p class="text-center footer_text p_line mb-3">Or, register with your email</p>
                         
                         <div class="mb-3">
-                            <input type="text">
-                            <input type="text">
-                            <input type="email">
-                            <input type="password">
+                            <div class="mb-3">
+                                <label class="small_footer_title mb-1" for="name">Full Name</label>
+                                <input class="input_group footer_text w-100" type="text" id="name" placeholder="First and last name">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="small_footer_title mb-1" for="name">Company Name</label>
+                                <input class="input_group footer_text w-100" type="text" id="companyName" placeholder="Your company or app name">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="small_footer_title mb-1" for="name">Work Email</label>
+                                <input class="input_group footer_text w-100" type="email" id="email" placeholder="you@yourcompany.com">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="small_footer_title mb-1" for="name">Password</label>
+                                <input class="input_group footer_text w-100" type="password" id="pass" placeholder="Password (at least 10 characters)">
+                            </div>
+
+                            <p class="text-center small_footer_text">I agree to be contacted by Open PRO about this offer as per the Open PRO <a href="https://en.wikipedia.org/wiki/Privacy_policy" target="_blank" style="color: var(--colorParagraphGray);">Privacy Policy</a>.</p>
+
                         </div>
 
                         <div class="d-grid mb-3">
@@ -67,7 +85,7 @@
                         </div>
                         
                         
-                        <p class="d-flex justify-content-center footer_text">Already using Open PRO? <a href="SignIn.html">Sign in</a></p>
+                        <p class="text-center footer_text">Already using Open PRO? <a href="SignIn.html" class="SignIn_url ">Sign in</a></p>
                         
                     </div>
                 </form>
