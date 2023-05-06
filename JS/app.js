@@ -1,10 +1,3 @@
-let form = document.querySelector('.form_block'),
-    formInputs = document.querySelectorAll('.labelValid'),
-    afterStyle = window.getComputedStyle(formInputs, '::after'),
-    inputEmail = document.querySelector('#email'),
-    inputPass = document.querySelector('#pass');
-
-
 window.addEventListener('DOMContentLoaded', function(){
     var videoPlay = this.document.querySelector('.play_btn');
     var videoBlock = this.document.querySelector('.main_video_block');
@@ -29,21 +22,23 @@ window.addEventListener('DOMContentLoaded', function(){
 });
 
 
+let formLabels = document.querySelectorAll('.labelValid'),
+    formInputs = document.querySelectorAll('.input_group'),
+    form = document.querySelector('.form_block');
 
-form.onsubmit = function () {
-    elmailVal = inputEmail.value,
-    passVal = inputPass.value;
-
-    afterStyle.forEach(function(input) {
+    
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+    
+      formInputs.forEach(function(input, index) {
         if (input.value === '') {
-            afterStyle.display = 'inline';
-            console.log('input huinya minyai')
-        } 
-
-        else {
-            afterStyle.display = 'none';
+          formLabels[index].classList.add('Inline');
+          console.log('Wrong');
+        } else {
+          formLabels[index].classList.remove('Inline');
         }
-    })
+      });
+    });
+    
 
-    return false;
-};
+
