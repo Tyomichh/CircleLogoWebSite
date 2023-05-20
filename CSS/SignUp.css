@@ -41,6 +41,15 @@ hr {
 }
 
 
+/* Object */
+.SVGposition {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+
 /* BUTTONS */
 .btn-danger-slyle {
     height: 48px;
@@ -179,13 +188,13 @@ hr {
     outline: none;
 }
 
-.SignIn_url {
+.Sign_url {
     color: var(--colorPurp);
     text-decoration: none;
     transition: color .2s linear;
 }
 
-.SignIn_url:hover {
+.Sign_url:hover {
     color: var(--colorTitleWhite);
 }
 

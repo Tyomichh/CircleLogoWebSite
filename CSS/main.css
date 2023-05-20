@@ -38,6 +38,16 @@ hr {
     --colorVeryDark: #25282C;
 }
 
+
+/* Object */
+.SVGposition {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+
 /* BUTTONS */
 .btn-standart-slyle {
     font-size: 16px;
