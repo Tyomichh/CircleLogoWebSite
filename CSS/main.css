@@ -47,6 +47,11 @@ hr {
     z-index: -1;
 }
 
+.place {
+    left: 400px;
+    top: 480px;
+}
+
 
 /* BUTTONS */
 .btn-standart-slyle {
@@ -311,6 +316,7 @@ hr {
 
 /* Footer */
 .form_block {
+    overflow: hidden;
     max-height: 206px;
     height: 206px;
 }
