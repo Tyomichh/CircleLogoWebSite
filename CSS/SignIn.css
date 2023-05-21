@@ -109,13 +109,6 @@ hr {
     color: var(--colorInpuGray);
 }
 
-.privacy_policy_text {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 22px;
-    color: var(--colorParagraphGray);
-}
-
 .input_label_stl {
     font-size: 14px;
     font-weight: 500;
@@ -125,7 +118,7 @@ hr {
 
 
 /* Form */
-.form_block {
+.signIn_form {
     grid-template-columns: 1.1fr 1fr 1.1fr;
 }
 
@@ -188,22 +181,60 @@ hr {
     outline: none;
 }
 
-.Sign_url {
+.checkbox_inp {
+    display: none;
+}
+
+.fake_chekbox {
+    display: inline-block;
+    margin-top: 3px;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    position: relative;
+    background-color: var(--colorTitleWhite);
+}
+
+.fake_chekbox::after {
+    content:"";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    display: block;
+    border-radius: 3px;
+    background-image: url(../image/Ok.svg);
+    opacity: 0;
+    transition: .2s linear;
+}
+
+.checkbox_inp:checked + .fake_chekbox::after {
+    opacity: 1;
+ }
+
+ .checkbox_inp:checked + .fake_chekbox {
+    background-color: var(--colorPurp);
+ }
+
+.Casual_url_pr {
     color: var(--colorPurp);
     text-decoration: none;
     transition: color .2s linear;
 }
 
-.Sign_url:hover {
+.Casual_url_pr:hover {
     color: var(--colorTitleWhite);
 }
 
-.labelValid {
+.labelValid, .checkbox_lab {
     display: none;
     color:var(--colorRed);
     font-size: 14px;
 }
 
 .labelValid.Inline {
+    display: inline;
+}
+
+.checkbox_lab.Inline {
     display: inline;
 }

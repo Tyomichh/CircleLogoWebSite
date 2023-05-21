@@ -125,7 +125,7 @@ hr {
 
 
 /* Form */
-.form_block {
+.signUp_form {
     grid-template-columns: 1.1fr 1fr 1.1fr;
 }
 
@@ -180,7 +180,7 @@ hr {
     bottom: 45.83%;
 }
 
-.input_group {
+.input_group, .email_inp {
     height: 48px;
     padding: 0 15px;
     border: 1px solid #33363A;
@@ -188,13 +188,13 @@ hr {
     outline: none;
 }
 
-.Sign_url {
+.Casual_url_pr {
     color: var(--colorPurp);
     text-decoration: none;
     transition: color .2s linear;
 }
 
-.Sign_url:hover {
+.Casual_url_pr:hover {
     color: var(--colorTitleWhite);
 }
 

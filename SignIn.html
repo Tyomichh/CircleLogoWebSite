@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="CSS/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/SignUp.css">
+    <link rel="stylesheet" href="CSS/SignIn.css">
     <link rel="stylesheet" href="image/icomoon/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,7 +42,7 @@
                     <h1 class="col-10 first_title_text">Welcome. We exist to make entrepreneurism easier.</h1>
                 </div>
 
-                <form class="d-grid form_block justify-content-center w-100" action="" autocomplete="off">
+                <form class="d-grid signIn_form justify-content-center w-100" action="" autocomplete="off">
 
                     <div class="form_block_block">
 
@@ -64,15 +64,21 @@
                             </div>
                             
                             <div class="mb-3">
-                                <label class="input_label_stl mb-1" for="name">Password</label><span class="labelValid Inline"> *</span>
+                                <label class="input_label_stl mb-1" for="pass">Password</label><span class="labelValid Inline"> *</span>
                                 <input class="input_group form_text w-100" type="password" id="pass" placeholder="Password (at least 10 characters)">
                             </div>
 
-                            <div class="mb-3">
-                                <input class="input_group form_text w-100" type="checkbox" id="pass" placeholder="Password (at least 10 characters)"><span class="labelValid Inline"> *</span>
-                            </div>
+                            <div class="d-flex justify-content-between mb-3">
+                                <div class="d-flex">
+                                    <input class="checkbox_inp" type="checkbox" id="checkbox" style="cursor:pointer">
+                                    <span class="fake_chekbox"></span>
+                                    <label class="form_text mb-1" for="checkbox" style="color: var(--colorParagraphGray); padding-left: 5px; cursor:pointer">Keep me signed in</label><span class="checkbox_lab Inline"> *</span>
+                                </div>
 
-                            <p class="text-center privacy_policy_text">I agree to be contacted by Open PRO about this offer as per the Open PRO <a href="https://en.wikipedia.org/wiki/Privacy_policy" target="_blank" style="color: var(--colorParagraphGray);">Privacy Policy</a>.</p>
+                                <div class="d-inline-block">
+                                    <a class="form_text Casual_url_pr" href="https://en.wikipedia.org/wiki/Privacy_policy" target="_blank">Forgot Password?</a>
+                                </div>
+                            </div>
 
                         </div>
 
@@ -81,7 +87,7 @@
                         </div>
                         
                         
-                        <p class="text-center form_text">Don't you have an account? <a href="SignUp.html" class="Sign_url ">Sign up</a></p>
+                        <p class="text-center form_text">Don't you have an account? <a class="Casual_url_pr " href="SignUp.html" >Sign up</a></p>
                         
                     </div>
                 </form>
@@ -94,7 +100,7 @@
 
 
     <script src="JS/bootstrap.bundle.min.js"></script>
-    <script src="JS/app.js"></script>
+    <script src="JS/formTwo.js"></script>
 
 </body>
 </html>
