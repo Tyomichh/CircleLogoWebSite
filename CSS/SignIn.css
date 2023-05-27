@@ -311,17 +311,9 @@ hr {
         font-size: 34px;
     }
 
-    .name_text {
-        font-size: 14px;
-    }
-
-    .form_text {
-        font-size: 14px;
-    }
-
     /* Form */
     .signIn_form {
-        grid-template-columns: 0.2fr 0.59fr 0.2fr;
+        grid-template-columns: 0.2fr 0.6fr 0.2fr;
     }
 
     .p_line::before {
@@ -337,31 +329,38 @@ hr {
 
 @media (max-width: 520px) {
 
+    /* Object */
+    .SVGposition {
+        width: 310px;
+    }
+
     /* Text */
     .first_title_text {
-        font-size: 34px;
-    }
-
-    .name_text {
-        font-size: 14px;
-    }
-
-    .form_text {
-        font-size: 14px;
+        font-size: 28px;
     }
 
     /* Form */
-    .signIn_form {
-        grid-template-columns: 0.2fr 0.59fr 0.2fr;
-    }
-
     .p_line::before {
-        max-width: 54px;
-        right: 81.56%;
+        display: none;
     }
 
     .p_line::after {
-        max-width: 54px;
-        left: 81.56%;
+        display: none;  
     }
+}
+
+@media (max-width: 420px) {
+    /* Text */
+    .first_title_text {
+        font-size: 20px;
+    }
+
+    .name_text {
+        font-size: 12px;
+    }
+
+    .form_text {
+        font-size: 12px;
+    }
+
 }
