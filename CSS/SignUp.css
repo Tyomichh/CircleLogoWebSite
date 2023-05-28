@@ -166,7 +166,6 @@ hr {
     position: absolute;
     right: 77.56%;
     top: 50%;
-    bottom: 45.83%;
 }
 
 .p_line::after {
@@ -177,7 +176,6 @@ hr {
     position: absolute;
     left: 77.56%;
     top: 50%;
-    bottom: 45.83%;
 }
 
 .input_group, .email_inp {
@@ -206,4 +204,144 @@ hr {
 
 .labelValid.Inline {
     display: inline;
+}
+
+
+
+
+
+/*                   Adaptive                   */
+@media (max-width: 1400px) {
+
+    /* Form */
+    .p_line::before {
+        max-width: 64px;
+        right: 81.56%;
+    }
+
+    .p_line::after {
+        max-width: 64px;
+        left: 81.56%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    /* Text */
+    .first_title_text {
+        font-size: 48px;
+    }
+
+    .name_text {
+        font-size: 16px;
+    }
+
+    .form_text {
+        font-size: 16px;
+    }
+
+    /* Form */
+    .signUp_form {
+        grid-template-columns: 0.7fr 0.8fr 0.7fr;
+    }
+}
+
+@media (max-width: 991px) {
+
+    /* Text */
+    .first_title_text {
+        font-size: 40px;
+    }
+
+    .name_text {
+        font-size: 14px;
+    }
+
+    .form_text {
+        font-size: 14px;
+    }
+
+    .privacy_policy_text {
+        font-size: 14px;
+    }
+
+    /* Form */
+    .signUp_form {
+        grid-template-columns: 0.6fr 1fr 0.6fr;
+    }
+
+    .p_line::before {
+        max-width: 58px;
+        right: 81.56%;
+    }
+
+    .p_line::after {
+        max-width: 58px;
+        left: 81.56%;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /* Text */
+    .first_title_text {
+        font-size: 34px;
+    }
+
+    /* Form */
+    .signUp_form {
+        grid-template-columns: 0.2fr 0.6fr 0.2fr;
+    }
+
+    .p_line::before {
+        max-width: 54px;
+        right: 81.56%;
+    }
+
+    .p_line::after {
+        max-width: 54px;
+        left: 81.56%;
+    }
+}
+
+@media (max-width: 520px) {
+
+    /* Object */
+    .SVGposition {
+        width: 310px;
+    }
+
+    /* Text */
+    .first_title_text {
+        font-size: 28px;
+    }
+
+    /* Form */
+    .p_line::before {
+        display: none;
+    }
+
+    .p_line::after {
+        display: none;  
+    }
+}
+
+@media (max-width: 420px) {
+    /* Text */
+    .first_title_text {
+        font-size: 20px;
+    }
+
+    .name_text {
+        font-size: 12px;
+    }
+
+    .form_text {
+        font-size: 12px;
+    }
+
+    .privacy_policy_text {
+        font-size: 12px;
+    }
+
 }
