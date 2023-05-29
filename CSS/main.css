@@ -213,7 +213,7 @@ hr {
 }
 
 .small_footer_title {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 22px;
     color: var(--bs-white);
@@ -405,4 +405,62 @@ hr {
     justify-content: end;
     grid-template-columns: repeat(5, 32px);
     grid-column-gap: 16px;
+}
+
+.MadeBy_Element {
+    display: block;
+    font-size: 14px;
+    color: var(--colorParagraphGray);
+}
+
+
+
+
+
+/*                   Adaptive                   */
+
+@media (max-width: 1200px) {
+
+    /* Text */
+    .main_title_text {
+        font-size: 38px;
+    }
+    .main_paragraph_text {
+        font-size: 18px;
+    }
+    .first_title_text {
+        font-size: 48px;
+    }
+    /* .subtitle_text {
+
+    } */
+    .second_paragraph_text {
+        font-size: 16px;
+    }
+    /* .motivating_text {
+
+    } */
+    .art_text {
+        font-size: 14px;
+    }
+    .second_title_text {
+        font-size: 28px;
+    }
+    .name_text {
+        font-size: 14px;
+    }
+    .footer_text {
+        font-size: 14px;
+    }
+    .small_footer_title {
+        font-size: 14px;
+    }
+    .small_footer_text {
+        font-size: 12px;
+    }
+
+    /* FOOTER */
+    .grid_item:nth-child(2) {
+        grid-column-gap: 30px;
+    }
 }
