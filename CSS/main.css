@@ -47,9 +47,23 @@ hr {
     z-index: -1;
 }
 
-.place {
+.upper_header_obj {
+    width: 439px;
+}
+
+.round_obj {
+    width: 564px;
     left: 400px;
     top: 480px;
+}
+
+.footer_obj {
+    width: 248px;
+}
+
+/* Flex_help */
+.flex_wrap{
+    flex-wrap: nowrap;
 }
 
 
@@ -152,6 +166,10 @@ hr {
     font-size: 40px;
     font-weight: 800;
     color: var(--colorTitleWhite);
+}
+
+.OneProduct_paragraph_text {
+    font-size: 18px;
 }
 
 .second_title_text {
@@ -257,6 +275,11 @@ hr {
     width: 100%;
 }
 
+.grid_Majority {
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center
+}
+
 .purp_circle {
     max-width: 64px;
     max-height: 64px;
@@ -317,7 +340,6 @@ hr {
 /* Footer */
 .form_block {
     overflow: hidden;
-    max-height: 206px;
     height: 206px;
 }
 
@@ -415,52 +437,242 @@ hr {
 
 
 
-
-
 /*                   Adaptive                   */
-
 @media (max-width: 1200px) {
+
+    /* Object */
+    .upper_header_obj {
+        width: 350px;
+    }
+
+    .round_obj {
+        width: 410px;
+        left: 200px;
+        top: 480px;
+    }  
 
     /* Text */
     .main_title_text {
         font-size: 38px;
     }
+
     .main_paragraph_text {
         font-size: 18px;
     }
+
+    .OneProduct_paragraph_text {
+        font-size: 16px;
+    }
+
     .first_title_text {
         font-size: 48px;
     }
+
     /* .subtitle_text {
 
     } */
     .second_paragraph_text {
         font-size: 16px;
     }
+
     /* .motivating_text {
 
     } */
     .art_text {
         font-size: 14px;
     }
+
     .second_title_text {
         font-size: 28px;
     }
+
     .name_text {
         font-size: 14px;
     }
+
     .footer_text {
         font-size: 14px;
     }
+
     .small_footer_title {
         font-size: 14px;
     }
+    
     .small_footer_text {
         font-size: 12px;
     }
 
+    /* Margin */
+    .marg_colmn {
+        gap: 20px
+    }
+
+    /* The majority our customers */
+    .colmn_size {
+        max-width: 300px;
+    }
+
     /* FOOTER */
+    .form_block {
+        gap: 10px;
+    }
+
+    .input_style {
+        padding-right: 108px;
+    }
+
     .grid_item:nth-child(2) {
         grid-column-gap: 30px;
     }
+}
+
+@media (max-width: 991px) {
+
+    /* Object */
+    .footer_obj {
+        width: 200px;
+    }
+
+    /* Text */
+    .first_title_text {
+        font-size: 44px;
+    }
+
+    /* Margin */
+    .marg_colmn {
+        gap: 15px
+    }
+    
+    /* The majority our customers */
+    .colmn_size {
+        max-width: 300px;
+    }
+
+    .grid_Majority {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* Don't take our word for it */
+    .quotes_object {
+        left: 18%;
+    }
+
+    /* FOOTER */
+    .input_style {
+        padding-right: 40px;
+    }
+
+    .gridM {
+        grid-template-columns: 0.7fr 1.2fr;
+    }
+
+    .grid_item:nth-child(1) {
+        width: 85%;
+    }
+    
+    .grid_item:nth-child(2) {
+        grid-column-gap: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Object */
+    .footer_obj {
+        width: 200px;
+    }
+
+    .upper_header_obj {
+        width: 300px;
+    }
+
+    .round_obj {
+        width: 310px;
+        left: 50px;
+    }
+    
+    /* Flex_help */
+    .flex_wrap{
+        flex-wrap: wrap;
+    }
+
+    /* Text */
+    .main_title_text {
+        font-size: 32px;
+    }
+
+    .main_paragraph_text {
+        font-size: 16px;
+    }
+
+    .OneProduct_paragraph_text {
+        font-size: 14px;
+    }
+
+    .first_title_text {
+        font-size: 36px;
+    }
+
+    /* .subtitle_text {
+
+    } */
+    .second_paragraph_text {
+        font-size: 16px;
+    }
+
+    /* .motivating_text {
+
+    } */
+    .art_text {
+        font-size: 12px;
+    }
+
+    .second_title_text {
+        font-size: 24px;
+    }
+
+    .name_text {
+        font-size: 12px;
+    }
+
+    .footer_text {
+        font-size: 12px;
+    }
+
+    .small_footer_title {
+        font-size: 14px;
+    }
+    
+    .small_footer_text {
+        font-size: 12px;
+    }
+
+    /* The majority our customers */
+    .colmn_size {
+        max-width: 240px;
+    }
+
+    /* Don't take our word for it */
+    .quotes_object {
+        left: 11%;
+    }
+
+    /* FOOTER */
+    .form_block {
+        max-width: 540px;
+        width: 100%;
+    }
+
+    .input_style {
+        padding-right: 2px;
+    }
+
+    .gridM {
+        grid-template-columns: none; 
+        grid-template-rows: none;
+    }
+    
+    .grid_item:nth-child(2) {
+        grid-column-gap: 5px;
+    }
+
 }
