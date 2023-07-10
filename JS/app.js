@@ -19,4 +19,17 @@ window.addEventListener('DOMContentLoaded', function () {
 
   })
 
+  document.querySelectorAll("[data-scroll]").forEach(function (element) {
+    element.addEventListener("click", function (event) {
+      event.preventDefault();
+      var blockID = this.getAttribute("data-scroll");
+      var blockOffset = document.querySelector(blockID).offsetTop;
+
+      window.scrollTo({
+        top: blockOffset,
+        behavior: "smooth"
+      });
+    });
+  });
+
 });
